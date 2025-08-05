@@ -113,4 +113,5 @@ Opportunities for growth (e.g. improving Shopify sales).
 ## 📎 Author
 **Pranay Sonawane** 
 Data Analyst | SQL Enthusiast | Case Study Builder
+
 📫 Connect on LinkedIn :- www.linkedin.com/in/sonawane-pranay
