@@ -1,6 +1,5 @@
 
 -- 1.Which week numbers are missing from the dataset ? 
-
 with recursive numbers as (
 	select
 	      1 as week_numbers
@@ -25,7 +24,6 @@ where
         cws.week_number is null ;
 
 -- 2.How many total transactions were there for each year in the dataset ?
-
 select
         cws.calendar_year,
         sum(cws.transactions) as total_transactionsper_year
@@ -37,7 +35,6 @@ order by
         cws.calendar_year;
 
 -- 3.What are the total sales for each region for each month ?
-
 select
         cws.region,
         cws.month_number,
@@ -52,7 +49,6 @@ order by
         cws.region;
     
 -- 4.What is the total count of transactions for each platform ?
-
 select
         cws.platform,
         count(cws.platform) as transactions_happenper_platform,
@@ -63,7 +59,6 @@ group by
         cws.platform;
     
 -- 5.What is the percentage of sales for Retail vs Shopify for each month ? 
-
 WITH monthly_platform_sales AS (
         SELECT
                 month_number,
@@ -101,7 +96,6 @@ ORDER BY
         calendar_year;
 
 -- 6.	What is the percentage of sales by demographic for each year in the dataset ? 
-
 with total_yearly_sales as (
 	select
 		cws.calendar_year,
@@ -133,7 +127,6 @@ order by
 	cws.calendar_year;
     
 -- 7.Which age_band and demographic values contribute the most to Retail sales ?
-
 with age_band_contri as (
 	select
                 cws.age_band,
