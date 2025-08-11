@@ -1,4 +1,4 @@
-# 🧠 SQL Case Study #1 – Data Mart Sales Analysis 2020
+# 🧠 SQL Case Study – Data Mart Sales Analysis 2020
 
 ## 📌 Project Title  
 **Data Mart Sales Performance Analysis – 2020**
